@@ -194,7 +194,7 @@ width: 50%;
   width: 40%;
   min-width: 350px;
   height: 358px;
-  background-image: url(/img/Rectangle\ 39.png);
+  background-image: url(/img/content_window_1.png);
   background-size: cover;
   margin-top: 50px;
 }
@@ -207,7 +207,7 @@ width: 50%;
   width: 40%;
   min-width: 350px;
   height: 358px;
-  background-image: url(/img/Rectangle\ 39\ \(1\).png);
+  background-image: url(/img/content_window_2.png);
   background-size: cover;
   margin-top: 50px;
 }
@@ -220,7 +220,7 @@ width: 50%;
   width: 40%;
   min-width: 350px;
   height: 358px;
-  background-image: url(/img/Rectangle\ 39\ \(2\).png);
+  background-image: url(/img/content_window_3.png);
   background-size: cover;
   margin-top: 50px;
 }
@@ -233,7 +233,7 @@ width: 50%;
   width: 40%;
   min-width: 350px;
   height: auto;
-  background-image: url(/img/Rectangle\ 39\ \(3\).png);
+  background-image: url(/img/content_window_4.png);
   background-size: cover;
   margin-top: 50px;
 }
@@ -332,6 +332,12 @@ width: 50%;
   max-width: 65%;
   margin: 0 auto;
 }
+.logo-footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
 .footer-logo {
   display: flex;
   width: 45px;
@@ -346,12 +352,14 @@ width: 50%;
   width: 20%;
   line-height: 30px;
 }
-h1 {
+.title-info {
   font-size: 20px;
   color: #212353;
+  font-weight: bold;
 }
 .inf-dwn {
   padding-top: 50px;
+  width:100%;
 }
 .info-adds {
   font-size: 15px;
@@ -379,17 +387,30 @@ li {
   height: 50px;
   cursor: pointer;
 }
-.social-media {
- 
-}
 .fot-end {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 65%;
   padding-top: 10%;
   margin: 0 auto;
 }
-.right{
+.right {
   width: 25%;
+}
+
+@media screen and (max-width:800px) {
+  .fone {
+    display: none;
+  }
+  .intro-inner {
+    width:50%;
+  }
+  .slider {
+    display: none;
+  }
+  .footer-info {
+    display: block;
+  }
 }
